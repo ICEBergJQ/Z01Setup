@@ -1,6 +1,6 @@
 image_path="$HOME/zone01-config/Background.jpeg"
 # theme list ls -d /usr/share/themes/* |xargs -L 1 basename
-theme_color='Yaru-viridian-dark'
+theme_color='Yaru-purple-dark'
 #Clones the settings repo
 git clone https://github.com/ICEBergJQ/Z01Setup.git ~/zone01-config && cd ~/zone01-config/ && mv .p10k.zsh ~/.p10k.zsh && mv .zshrc ~/.zshrc
 # clones zsh theme 
