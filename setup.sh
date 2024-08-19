@@ -1,8 +1,6 @@
 image_path="$HOME/zone01-config/Background.jpeg"
 
 # theme list ls -d /usr/share/themes/* |xargs -L 1 basename
-theme_color='Yaru-purple-dark'
-
 #Clones the settings repo
 if [ -d "~/zone01-config/" ]; then
     echo -e "Directory ~/zone01-config/ already exists. Overwriting..."
