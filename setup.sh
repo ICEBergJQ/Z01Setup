@@ -9,6 +9,9 @@ if [ -d "~/zone01-config/" ]; then
 fi
 git clone https://github.com/ICEBergJQ/Z01Setup.git ~/zone01-config && cd ~/zone01-config/
 
+# Makes you use french and english layouts
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'fr')]" > /dev/null 2>&1
+
 #Move the premade p10k settings and zshrc
 mv .p10k.zsh ~/.p10k.zsh && mv .zshrc ~/.zshrc
 
@@ -26,8 +29,6 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' 2>/dev/null
 # Changes theme Color
 zsh set_theme.sh
 
-# Makes you use french and english layouts
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'fr')]" > /dev/null 2>&1
 
 # change display and terminal font
 zsh set_font.sh
