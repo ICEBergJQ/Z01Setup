@@ -26,7 +26,10 @@ gsettings set org.gnome.desktop.background picture-uri "file://${image_path}" 2>
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark' 2>/dev/null
 
 # Changes theme Color
-gsettings set org.gnome.desktop.interface gtk-theme $theme_color 2>/dev/null
+zsh set_theme.sh
+
+# Makes you use french and english layouts
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'fr')]" > /dev/null 2>&1
 
 # change display and terminal font
 zsh set_font.sh
