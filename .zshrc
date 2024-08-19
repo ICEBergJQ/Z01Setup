@@ -97,6 +97,11 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+alias "quickpush"="gofmt -w . && gaa && gc -m \"quick_add-commit-push alias\" && gp"
+alias mydicksize='df -h . | grep --color=always -E "Size|Used|Avail|Capacity|[0-9]*\.*[0-9]*Mi|[0-9]*\.*[0-9]*Gi|[0-9]+\.*[0-9]+% |$"'
+alias calcdicksize="du -hs * | sort -r -h"
+alias biggestdickrecur="du -mh 2>/dev/null | sort -hr | head -30"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
