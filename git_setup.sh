@@ -11,11 +11,6 @@ echo -e "${GREEN}Enter your fullname or login:${RESET} \c"
 read NAME
 echo -e "${GREEN}Enter your email:${RESET} \c"
 read EMAIL
-
-# Confirm the input
-echo -e "\n${YELLOW}You have entered the following details:${RESET}"
-echo -e "${GREEN}Name :${RESET} $NAME"
-echo -e "${GREEN}Email:${RESET} $EMAIL"
 echo -e "${YELLOW}Is this correct? (y/n):${RESET} \c"
 read CONFIRMATION
 
